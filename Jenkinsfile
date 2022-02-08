@@ -10,5 +10,12 @@ pipeline{
       echo "hello"
     }
   }
+  stage('cat hello'){
+    steps {
+      sh '''
+      cat README.md 
+      '''
+    }
+  }  
 }
 }
