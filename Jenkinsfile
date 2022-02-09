@@ -26,7 +26,7 @@ pipeline{
       branch "PR-*"
     }
     steps {
-      sh "echo 'ismaeel'"
+      sh "echo 'hello world'"
       echo "this is only for PR branch"
     }
   }   
