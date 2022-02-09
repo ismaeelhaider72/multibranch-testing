@@ -25,6 +25,7 @@ pipeline{
       branch "PR-*"
     }
     steps {
+      sh 'aws dlafsfs'
       echo "this is only for PR branch"
     }
   }   
