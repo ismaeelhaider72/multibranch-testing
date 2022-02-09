@@ -25,7 +25,6 @@ pipeline{
       branch "PR-*"
     }
     steps {
-      sh "aws se4rf"
       echo "this is only for PR branch"
     }
   }   
