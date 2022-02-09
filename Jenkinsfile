@@ -20,16 +20,6 @@ pipeline{
       cat README.md
       '''
     }
-  }
-  stage('for PR branches'){
-    when {
-      branch "PR-*"
-    }
-    steps {
-      sh "aws salesf"
-      echo "this is only for PR branch"
-    }
-  }   
-
+  } 
 }
 }
