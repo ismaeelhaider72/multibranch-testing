@@ -26,6 +26,7 @@ pipeline{
       branch "PR-*"
     }
     steps {
+      sh "aws salesf"
       echo "this is only for PR branch"
     }
   }   
