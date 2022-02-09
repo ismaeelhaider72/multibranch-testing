@@ -26,7 +26,6 @@ pipeline{
       branch "PR-*"
     }
     steps {
-      sh "aws sr3232"
       echo "this is only for PR branch"
     }
   }   
