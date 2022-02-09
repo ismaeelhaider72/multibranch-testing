@@ -17,7 +17,6 @@ pipeline{
     steps {
       sh '''
       cat README.md
-      echo "hy ismaeel haider"
       '''
     }
   }
