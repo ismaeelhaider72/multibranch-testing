@@ -9,7 +9,25 @@ pipeline{
     steps {
       echo "hello"
     }
-  }  
+  }
+  stage('for fix branch'){
+    when {
+      branch "fix-*"
+    }
+    steps {
+      sh '''
+      cat README.md
+      '''
+    }
+  }
+  stage('for PR branches'){
+    when {
+      branch "PR-*"
+    }
+    steps {
+      echo "this is only for PR branch"
+    }
+  }   
 
 }
 }
